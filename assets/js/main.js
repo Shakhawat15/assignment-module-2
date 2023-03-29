@@ -1,8 +1,20 @@
 /**
+ * Build a BMI Calculator using JavaScript and deploy it to Netlify
+ * Solved By: Md Shakhawat Hossen
+ */
+
+// Select the button in variable btn to set an event on this button
+const btn = document.getElementById('calculateBtn');
+// Add a click event on the btn button and call the calculateBMI() function
+btn.addEventListener("click", calculateBMI)
+
+/**
  * Define the function to calculate the BMI.
  * Print the BMI Calculate the Height & Weight.
  */
-function calculateBMI() {
+function calculateBMI(e) {
+    // The default action that belongs to the event will not occur
+    e.preventDefault();
     // Declare weight and height variable to get the height and weght from input.
     const weight = parseFloat(document.getElementById('weightInput').value);
     let height = parseFloat(document.getElementById('heightInput').value); // Use let because height need to modifie.
