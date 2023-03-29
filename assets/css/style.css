@@ -1,0 +1,140 @@
+/*========== BASE CSS ==========*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+input,
+button,
+p {
+    font-size: 1rem;
+}
+
+body {
+    color: #fff;
+    background: url("../img/bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+/*========== Form CSS ==========*/
+#main {
+    position: relative;
+    background: rgba(0, 0, 25.5, 0.1);
+    width: 380px;
+    height: 450px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+}
+
+#main h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 32px;
+}
+
+.content,
+.input-box {
+    display: grid;
+}
+
+.content {
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-box input{
+    width: 100%;
+    padding-block: .8rem;
+    background: none;
+    color: #fff;
+}
+
+.input-box {
+    position: relative;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-weight: 500;
+    transition: top .3s, font-size .3s;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    /*width: 100%;*/
+    padding: .8rem;
+    border-radius: .5rem;
+    background: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: .3s;
+    border: 2px solid #fff;
+}
+
+button:nth-child(1) {
+    width: 50%;
+}
+
+button:last-child {
+    width: 30%;
+    display: none;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/*========== Input focus move up label ==========*/
+.input-box input:focus + label {
+    top: -12px;
+    font-size: .813rem;
+}
+
+/*========== Input focus sticky top label ==========*/
+input:not(:placeholder-shown):not(:focus) + label {
+    top: -12px;
+    font-size: .813rem;
+}
+
+p {
+    font-weight: 600;
+    background: #fff;
+    padding: .8rem;
+    /*border-radius: .5rem;*/
+    color: #000;
+    border: 2px dashed #ff0000;
+    /*text-align: center;*/
+}
+
+#result {
+    color: #ff0000;
+    /*font-size: 1.2rem;*/
+}
