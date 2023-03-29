@@ -8,32 +8,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <!-- External CSS File -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>BMI Calculator | Using HTML, CSS and Row JavaScript</title>
 </head>
 <body>
 <section id="main">
+    <!-- Create Form -->
     <form action="#" id="form">
         <h2>BMI Calculator</h2>
         <div class="content">
             <div class="input-box">
+                <!-- Create input field with id "weightInput" for take the weight  -->
                 <input type="text" name="weight" id="weightInput" placeholder=" " autocomplete="off">
                 <label for="weightInput">Weight(kg):</label>
             </div>
         </div>
         <div class="content">
             <div class="input-box">
+                <!-- Create input field with id "heightInput" for take the height  -->
                 <input type="text" name="height" id="heightInput" placeholder=" " autocomplete="off">
                 <label for="heightInput">Height(cm):</label>
             </div>
         </div>
         <div class="button">
-            <button id="calculateBtn" >Calculate</button>
+            <!-- Create button with id "calculateBtn" for calculate the BMI  -->
+            <button id="calculateBtn">Calculate</button>
+            <!-- Create button for reset the value  -->
             <button id="resetBtn" onclick="resetValue()">Reset</button>
         </div>
     </form>
-        <p>Your BMI is: <span id="result"></span></p>
+    <p>Your BMI is: <span id="result"></span></p>
 </section>
 
 <!-- External JS File -->
