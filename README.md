@@ -1,5 +1,3 @@
-#Assignment
-
-##Module 2
-
-###Beginning JavaScript
+# Assignment
+## Module 2
+### Beginning JavaScript
